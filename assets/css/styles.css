@@ -56,6 +56,7 @@ blockquote, q {quotes: "" "";}
 img, picture, video, embed {max-width: 100%;}
 *, *:before, *:after {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 
+html {background-color: var(--color);}
 body {
 	color: var(--text-color);
     font-family: 'Calibri';
@@ -101,7 +102,6 @@ header {
 footer {
 	width: 100%;
 	height: 437px;
-	background-size: contain;
 	background: url(../images/bg-rodape.jpg) no-repeat center bottom #FFF;
 }
 
@@ -131,6 +131,27 @@ h1 {
 	}
 
 .img-destaque {text-align: center; margin-bottom: 4rem;}
-.destaque-descricao {
-	font-size: 4.1rem;
+	.img-destaque video {max-width: 100%;}
+.destaque-descricao {font-size: 4.1rem;}
+
+.dimensoes {
+	font-size: 4rem;
+	line-height: 1.4em;
+	margin-top: 10rem;
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+}
+	.dimensoes .bloco-a, .dimensoes .bloco-b {width: 49%;}
+	.dimensoes .bloco-b {color: var(--color);}
+
+@media screen and (max-width: 2000px) {
+	footer {background-size: 100%;}
+}
+@media screen and (max-width: 1700px) {
+	header nav a {
+		width: 18em;
+		height: 18em;
+		line-height: 18em;
+	}
 }
