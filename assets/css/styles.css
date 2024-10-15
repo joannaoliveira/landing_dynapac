@@ -76,8 +76,8 @@ sub {bottom: -0.25em;}
 header {
 	width: 96%;
 	max-width: 2200px;
-	padding: 5em;
 	margin: 0 auto;
+	padding: 4rem 4rem 0;
 }
 	header nav {
 		display: flex;
@@ -101,22 +101,23 @@ header {
 			header nav a img {max-width: 50%; vertical-align: middle;}
 
 footer {
-	width: 100%;
-	height: 437px;
 	background: url(../images/footer.png) no-repeat center bottom transparent;
 }
+	footer, footer a {width: 100%; height: 437px;}
+	footer a {display: block;}
 
 #content {
 	width: 90%;
 	max-width: 2000px;
 	margin: 0 auto;
-	padding: 0 0 10rem;
+	padding: 0 0 5rem;
 }
 
 h1 {
-	font-size: 8rem;
+	font-size: 7rem;
 	font-weight: bold;
-	margin-bottom: 8rem;
+	padding: 0;
+	margin-bottom: 5rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -133,7 +134,7 @@ h1 {
 		background-color: var(--color);
 	}
 
-.img-destaque {text-align: center; margin-bottom: 4rem;}
+.img-destaque {text-align: center; margin-bottom: 2rem;}
 	.img-destaque video {max-width: 100%;}
 .destaque-descricao {font-size: 2.6rem;}
 
@@ -147,9 +148,18 @@ h1 {
 	.dimensoes .bloco-a, .dimensoes .bloco-b {width: 49%;}
 	.dimensoes .bloco-b {color: var(--color);}
 
+.redes-sociais {margin-top: 5rem; text-align: center;}
+
 @media screen and (max-width: 2000px) {
 	footer {background-size: 100%;}
 }
 @media screen and (max-width: 1200px) {
-	footer {height: 216px;}
+	footer, footer a {height: 216px;}
+}
+@media screen and (max-width: 1030px) {
+	header nav a {
+		width: 20em;
+		height: 20em;
+		line-height: 20em;
+	}
 }
